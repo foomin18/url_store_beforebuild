@@ -1,0 +1,104 @@
+/* src/App.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    background-color: rgb(52, 52, 52);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    height: 50px;
+  }
+  
+  .navbar-toggle {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .navbar-genres {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 50px;
+    left: -100px;
+    background-color: rgb(55, 55, 71);
+    opacity: 0;
+    visibility: hidden;
+    transition: left 0.3s ease, opacity 0.3s ease, visibility 0.3s;
+  }
+  
+  .navbar-genres.open {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .navbar-genres li {
+    margin: 4px 0;
+  }
+  
+  .navbar-genres button {
+    background: none;
+    border: none;
+    color: rgb(218, 171, 149);
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .navbar-genres button:hover {
+    text-decoration: underline;
+  }
+  
+  .navbar-genres:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.image-container {
+  /* 画像の最大幅を400pxに設定 */
+  max-width: 500px;
+  /* 画像がコンテナを超えないようにするためのスタイル */
+  overflow: hidden;    
+  /* 画像を幅100％に設定 */
+  width: 100%;
+  /* 画像の高さを自動調整 */
+  height: auto;
+}
+
+.scroll {
+  background-color: rgb(77, 77, 77);
+}
+
+.genre {
+  color: rgb(221, 211, 206);
+}
+
+.contain {
+  background-color: rgb(185, 182, 180);
+}
+
+.urltxt {
+  color: rgb(170, 19, 150);
+}
+
+.genre_here {
+  margin-top: 5px;
+}
+
+h6 {
+  margin-top: 10px;
+}

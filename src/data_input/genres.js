@@ -1,0 +1,1 @@
+export const genres = ['A', 'B', 'C', 'D', 'E', 'F'];
