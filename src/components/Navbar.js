@@ -36,6 +36,7 @@ class Navbar extends Component {
           </li>
         );
       }
+      return null;
     });
 
     return (
